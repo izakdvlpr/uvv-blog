@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CulináriaJudaica - Contato</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="header-nav">
+      <a href="/home.html" class="header-nav-logo">
+        <i class="header-nav-logo-icon fa-solid fa-menorah"></i>
+        <span class="header-nav-logo-text">
+          Culinária
+          <small>Judaica</small>
+        </span>
+      </a>
+
+      <ul class="header-nav-menu">
+        <li class="header-nav-link">
+          <a href="/home.html">Home</a>
+        </li>
+        <li class="header-nav-link">
+          <a href="/recipes.html">Receitas</a>
+        </li>
+        <li class="header-nav-link">
+          <a href="/about.html">Sobre</a>
+        </li>
+        <li class="header-nav-link">
+          <a href="/contact.html">Contato</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="contact">
+      <h1 class="contact-title">Contato</h1>
+
+      <p class="contact-description">
+        Tem alguma dúvida, sugestão ou gostaria de compartilhar uma receita conosco? Entre em contato conosco
+        preenchendo
+        o formulário abaixo. Estamos ansiosos para ouvir de você!
+      </p>
+
+      <form id="contact-form" action="/" method="POST" class="contact-form">
+        <div class="contact-form-group">
+          <label for="name">Nome</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="contact-form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="contact-form-group">
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+
+        <button type="submit" class="contact-form-submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-details">
+        <h1 class="footer-copyright">Copyright © 2024 CulináriaJudaica - Todos os Direitos Reservados. </h1>
+
+        <ul class="footer-social-media">
+          <li>
+            <a href="#">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-tiktok"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <hr class="footer-divider">
+
+      <a href="https://github.com/izakdvlpr" class="footer-developer">
+        Site desenvolvido com muito ❤ por Isaque Lima
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    const contactForm = document.getElementById("contact-form")
+
+    contactForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      alert("Formulário enviado com sucesso!");
+
+      window.location.href = "home.html";
+    });
+  </script>
+</body>
+
+</html>

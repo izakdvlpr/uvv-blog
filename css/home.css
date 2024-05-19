@@ -1,0 +1,140 @@
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hero {
+  width: 100%;
+  height: 400px;
+  padding: 0 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 0.5rem;
+  background-color: var(--blue-500);
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.hero-description {
+  font-size: 1.25rem;
+  color: var(--white);
+}
+
+.articles-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.article {
+  width: 100%;
+  height: 100%;
+  max-height: 600px;
+
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 0.5rem;
+  filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+}
+
+.article-image {
+  width: 100%;
+  height: 200px;
+
+  flex-shrink: 0;
+
+  border-radius: 0.5rem 0.5rem 0 0;
+  object-fit: cover;
+}
+
+.article-body {
+  width: 100%;
+  height: 100%;
+  padding: 1.75rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  background-color: var(--white);
+}
+
+.article-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.article-header-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.article-header-info {
+  display: flex;
+  gap: 1rem;
+}
+
+.article-header-info-time,
+.article-header-info-author {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  font-size: 0.8rem;
+  color: var(--gray-500);
+}
+
+.article-divider {
+  height: 1px;
+
+  border: none;
+  background-color: var(--slate-200);
+}
+
+.article-description {
+  font-size: 0.9rem;
+  color: var(--gray-500);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.article-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.article-footer-link {
+  width: max-content;
+  height: 3rem;
+  padding: 0 2rem;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--white);
+  text-transform: uppercase;
+
+  background-color: var(--blue-500);
+}

@@ -1,0 +1,50 @@
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.about-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.about-description {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.about-subtitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.about-topics {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.about-topics li {
+  padding-left: 1rem;
+
+  display: flex;
+
+  font-size: 1.075rem;
+  font-weight: 400;
+}
